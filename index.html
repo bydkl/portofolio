@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Muhammad Biyadikal Khoir - Portofolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom, #007BFF, #00BFFF);
+      color: #fff;
+    }
+
+    nav {
+      background: rgba(0, 0, 50, 0.8);
+      padding: 1rem 2rem;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #00ffff;
+    }
+
+    header {
+      padding-top: 6rem;
+      text-align: center;
+    }
+
+    .profile-pic {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 4px solid #00ffff;
+      box-shadow: 0 0 20px #00ffff;
+      margin-bottom: 1rem;
+      animation: glow 2s infinite alternate;
+    }
+
+    @keyframes glow {
+      from {
+        box-shadow: 0 0 10px #00ffff;
+      }
+      to {
+        box-shadow: 0 0 25px #00ffff;
+      }
+    }
+
+    section {
+      padding: 4rem 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+      font-weight: 700;
+    }
+
+    .skills ul {
+      list-style: disc;
+      padding-left: 1.5rem;
+    }
+
+    footer {
+      background: rgba(0, 0, 50, 0.8);
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+
+    .contact a {
+      color: #00ffff;
+      text-decoration: none;
+    }
+
+    @media screen and (max-width: 600px) {
+      nav ul {
+        flex-direction: column;
+        gap: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <ul>
+      <li><a href="#tentang">Tentang</a></li>
+      <li><a href="#keahlian">Keahlian</a></li>
+      <li><a href="#sertifikat">Sertifikat</a></li>
+      <li><a href="#kontak">Kontak</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <img src="WhatsApp Image 2025-05-16 at 08.17.30.jpeg" alt="Foto Profil" class="profile-pic">
+    <h1>Muhammad Biyadikal Khoir</h1>
+    <p>Siswa SMKN 1 Nglegok - Teknik Komputer dan Jaringan</p>
+  </header>
+
+  <!-- Tentang Saya -->
+  <section id="tentang">
+    <h2>Tentang Saya</h2>
+    <p>Saya adalah seorang siswa SMKN 1 Nglegok jurusan TKJ yang mempunyai keterampilan di bidang teknik komputer jaringan. Saya adalah orang yang antusias dan memiliki semangat belajar tinggi. Memiliki dasar pengetahuan dalam bidang teknik komputer jaringan, serta mampu bekerja secara tim maupun individu. Berkomitmen untuk mengembangkan keterampilan dan mendapatkan pengalaman kerja melalui program PKL.</p>
+  </section>
+
+  <!-- Keahlian -->
+  <section id="keahlian" class="skills">
+    <h2>Keahlian</h2>
+    <h4>🖥️ Debian</h4>
+    <ul>
+      <li>Linux Fundamental</li>
+      <li>Manajemen user dan file</li>
+      <li>Manajemen network</li>
+      <li>Web server (Apache, Nginx)</li>
+    </ul>
+
+    <h4>🌐 Mikrotik</h4>
+    <ul>
+      <li>Manajemen network</li>
+      <li>Manajemen user dan file</li>
+      <li>Routing (Static, OSPF)</li>
+      <li>Firewall (NAT, Filter Rules)</li>
+      <li>Manajemen Bandwidth</li>
+    </ul>
+
+    <h4>🔌 Crimping Cable</h4>
+    <ul>
+      <li>Straight dan Cross</li>
+      <li>FO (Fiber Optik)</li>
+      <li>Splashing</li>
+    </ul>
+  </section>
+
+  <!-- Sertifikat -->
+  <section id="sertifikat">
+    <h2>Sertifikat</h2>
+    <ul>
+      <li>📜 FCF- Getting started in Cybersecurity 2.0 Self-Paced</li>
+      <li>📜 Network Fundamental</li>
+    </ul>
+  </section>
+
+  <!-- Kontak -->
+  <section id="kontak" class="contact">
+    <h2>Kontak</h2>
+    <p>📱 WhatsApp: <a href="https://wa.me/6285815913935" target="_blank">0858 1591 3935</a></p>
+    <p>📸 Instagram: <a href="https://instagram.com/dikaa_bydkhr" target="_blank">@dikaa_bydkhr</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Muhammad Biyadikal Khoir. Semua Hak Dilindungi.
+  </footer>
+
+  <!-- Script -->
+  <script>
+    // Efek scroll ke bagian dengan smooth (sudah aktif lewat CSS scroll-behavior)
+    console.log("Portofolio aktif dan responsif.");
+  </script>
+</body>
+</html>
